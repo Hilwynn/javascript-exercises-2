@@ -2,18 +2,18 @@
   // The last examples used forEach to iterate over an array. .forEach() invoked
   // a function for each item in an array, but doesn't actually return anything.
 
-  const dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"]
+  var dogs = ["Labrador", "Beagle", "Poodle", "Pug", "Chihuahua"];
 
   // This function is similar to the last task of the iteration challenges, except
   // it returns a string from the function instead of using console.log().
-  const doggieWalks = dogs.map((dogName) => {
-    return "The " + dogName + " needs to go for a walk!"
-  })
+  var doggieWalks = dogs.map(function (dogName) {
+    return "The " + dogName + " needs to go for a walk!";
+  });
 
   // Task 1: Use console.log to log the `doggieWalks` variable below to see what was
   // actually returned from .forEach()
   
-  console.log(doggieWalks)
+  console.log(doggieWalks);
 
 
   // Task 2: Now change .forEach to .map on line 9 and run the code again.
@@ -25,11 +25,11 @@
   // dogs.map() call. Inside the dogs.map() call, write a function which returns a
   // dog's name in uppercase. Finally, log the `shoutyDogNames` variable.
 
-  const shoutyDogNames = dogs.map((dogName) => {
-    return `${dogName}`.toUpperCase()
-  })
+  var shoutyDogNames = dogs.map(function (dogName) {
+    return ("" + dogName).toUpperCase();
+  });
   
-  console.log(shoutyDogNames)
+  console.log(shoutyDogNames);
 
 </script>
 
